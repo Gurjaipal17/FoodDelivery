@@ -10,7 +10,7 @@ import { ToastContainer} from 'react-toastify';
 
 function App() {
 //defined url only here
-  const url="https://food-backend-imml.onrender.com";
+  const url="https://fooddel-backend-qlgs.onrender.com";
   return (
     <div>
       <ToastContainer/>
