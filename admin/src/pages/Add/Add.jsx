@@ -36,7 +36,7 @@ setData(data=>({...data,[name]:value}))
         name:'',
     description:"",
     price:"",
-    category:"Salad"
+    category:""
       })
       setImage(false)
       toast.success(response.data.message)
@@ -79,7 +79,7 @@ setData(data=>({...data,[name]:value}))
             </div>
             <div className="add-price flex-col">
               <p>Product price</p>
-              <input onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='$20'/>
+              <input onChange={onChangeHandler} value={data.price} type="Number" name='price' placeholder='&#x20B9;20'/>
             </div>
           </div>
           <button type="submit" className='add-btn'>ADD</button>
