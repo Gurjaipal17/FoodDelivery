@@ -12,8 +12,7 @@ function Home() {
     <div>
       <Header/>
       <ExploreMenu category={category} setCategory={setCategory}/>
-        <FoodDisplay category={category}/>  
-        <AppDownload/>  
+        <FoodDisplay category={category}/>    
     </div>
   )
 }
