@@ -36,7 +36,7 @@ export default function MyOrders() {
 
                         }
                     })}</p>
-                    <p>${order.amount}.00</p>
+                    <p> &#x20B9;{order.amount}.00</p>
                     <p>Items: {order.items.length}</p>
                     <p><span>&#x25cf;</span><b>{order.status}</b></p>
                     <button onClick={fetchOrders}>Track Order</button>
