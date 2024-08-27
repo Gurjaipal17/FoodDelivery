@@ -71,14 +71,9 @@ useEffect(()=>{
           <input required name="lastName" onChange={onChangeHandler} value={data.lastName}  type="text" placeholder='Last Name' />
         </div>
         <input  required name="email" onChange={onChangeHandler} value={data.email} type="email" placeholder='Email address'/>
-        <input  required name="street" onChange={onChangeHandler} value={data.street} type="text" placeholder='Street'/>
         <div className="multi-fields">
-          <input required  name="city" onChange={onChangeHandler} value={data.city} type="text" placeholder='City' />
-          <input  required name="state" onChange={onChangeHandler} value={data.state} type="text" placeholder='State' />
-        </div>
-        <div className="multi-fields">
-          <input required  name="zipcode" onChange={onChangeHandler} value={data.zipcode} type="text" placeholder='Zip Code' />
-          <input  required name="country" onChange={onChangeHandler} value={data.country} type="text" placeholder='Country' />
+          <input required  name="city" onChange={onChangeHandler} value={data.city} type="text" placeholder='Room No.' />
+          <input  required name="state" onChange={onChangeHandler} value={data.state} type="text" placeholder='Hostel No.' />
         </div>
         <input required  name="phone" onChange={onChangeHandler} value={data.phone} type="text" placeholder='Phone'/>
         </div>      
@@ -88,17 +83,17 @@ useEffect(()=>{
           <div>
           <div className='cart-total-details'>
               <p>Subtotal</p>
-              <p>${getTotalCartAmount()}</p>
+              <p> &#x20B9;{getTotalCartAmount()}</p>
             </div>
             <hr/>
             <div className='cart-total-details'>
-              <p>Delivery Fee</p>
-              <p>{getTotalCartAmount()===0?0:2}</p>
+              <p>Packaging Fee</p>
+              <p> &#x20B9;{getTotalCartAmount()===0?0:5}</p>
             </div>
             <hr/>
             <div className='cart-total-details'>
               <b>Total</b>
-              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+5}</b>
             </div>
           </div>
             <button type='submit'>PROCEED TO PAYMENT</button>
