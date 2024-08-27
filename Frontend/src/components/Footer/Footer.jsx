@@ -7,8 +7,8 @@ function Footer() {
     <div className='footer' id='footer'> 
       <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam architecto minus sint sapiente aut accusamus, fugiat ad, reiciendis vero nam modi neque iure nulla itaque explicabo at vel veritatis repellendus.</p>
+{/*             <img src={assets.logo} alt="" /> */}
+            <p>Our canteen online food ordering website makes it easy to browse the menu, customize your order, and get your meal quickly. Enjoy a seamless experience with secure payments and real-time order tracking, all from the convenience of your device.</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
@@ -18,9 +18,8 @@ function Footer() {
         <div className="footer-content-center">
             <h2>COMPANY</h2>
             <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Delivery</li>
+                <li>Top Chef Canteen</li>
+                <li></li>
                 <li>Privacy Policy</li>
             </ul>
         </div>
@@ -28,12 +27,12 @@ function Footer() {
             <h2>GET IN TOUCH</h2>
             <ul>
                 <li>+919887657655</li>
-                <li>contact@tomato.com</li>
+                <li>canteen@iitdh.ac.in</li>
             </ul>
         </div>
       </div>
       <hr/>
-      <p className="footer-copyright">Copyright 2024 @ Tomato.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2024 @ canteeniitdh.com - All Right Reserved.</p>
     </div>
   )
 }
