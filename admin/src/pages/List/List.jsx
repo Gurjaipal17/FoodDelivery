@@ -50,7 +50,7 @@ function List({url}) {
         <img src={`${url}/images/`+item.image} alt="" />
         <p>{item.name}</p>
         <p>{item.category}</p>
-        <p>${item.price}</p>
+        <p>&#x20B9;{item.price}</p>
         <p onClick={()=>removeFood(item._id)} className='cursor'>X</p>
       </div>
 
