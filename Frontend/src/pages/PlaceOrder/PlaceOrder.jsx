@@ -93,7 +93,7 @@ useEffect(()=>{
             <hr/>
             <div className='cart-total-details'>
               <b>Total</b>
-              <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+5}</b>
+              <b> &#x20B9;{getTotalCartAmount()===0?0:getTotalCartAmount()+5}</b>
             </div>
           </div>
             <button type='submit'>PROCEED TO PAYMENT</button>
