@@ -51,12 +51,12 @@ const navigate = useNavigate();
             <hr/>
             <div className='cart-total-details'>
               <p>Packaging Fee</p>
-              <p> &#x20B9;{getTotalCartAmount()===0?0:2}</p>
+              <p> &#x20B9;{getTotalCartAmount()===0?0:5}</p>
             </div>
             <hr/>
             <div className='cart-total-details'>
               <b>Total</b>
-              <b> &#x20B9;{getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
+              <b> &#x20B9;{getTotalCartAmount()===0?0:getTotalCartAmount()+5}</b>
             </div>
           </div>
             <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
