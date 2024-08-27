@@ -53,16 +53,17 @@ useEffect(()=>{
               </p>
               <p className='order-item-name'>{order.address.firstName+" "+order.address.lastName}</p>
               <div className="order-item-address">
-                <p>{order.address.city+", "+order.address.state+", }</p>
+                <p>{order.address.street+","}</p>
+                <p>{order.address.city+", "+order.address.state+", "+order.address.country+", "+order.address.zipcode}</p>
               </div>
               <p className='order-item-phone'>{order.address.phone}</p>
             </div>
             <p>Items: {order.items.length}</p>
-            <p>${order.amount}</p>
+            <p>&#x20B9;{order.amount}</p>
             <select onChange={(event)=>statusHandler(event,order._id)} value={order.status}>
               <option value="Food Processing">Food Processing</option>
-              <option value="Order being Packed">Order being Packed</option>
-              <option value="Order Ready">Order Ready</option>
+              <option value="Out for Delivery">Order Being Packed</option>
+              <option value="Delivered">Order Ready</option>
             </select>
           </div>
         ))}
